@@ -1,0 +1,269 @@
+body,
+html {
+  width: 1920;
+  height: 1280;
+  background: whitesmoke;
+}
+
+body p {
+  font-style: normal;
+  font-size: 30px;
+}
+
+h1 {
+  color: #444;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 16px;
+  margin: 20px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  /*border-bottom: 1px solid #444;*/
+  
+  color: #40251a;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 33px;
+  margin: 20px 0 10px;
+  padding: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #e58924;
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  margin: 10px 0 5px;
+  text-transform: uppercase;
+}
+
+.main .container {
+  background: whitesmoke;
+  margin: -70px auto;
+  padding: 80px 30px 20px 45px;
+  width: 960px;
+  height: 1280px;
+  z-index: 0;
+  float: left;
+}
+
+.main .container .menu_serv {
+  margin: 50px auto;
+}
+
+.main .container .menu_spa {
+  margin: 120px auto;
+}
+
+.main .content {
+  background: whitesmoke;
+  margin: 0;
+  width: 960px;
+  height: 1280px;
+  padding: 0;
+  z-index: 0;
+  float: right;
+}
+
+.price p {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 30px;
+  font-style: normal;
+  margin: 26px 0 5px;
+  text-align: right;
+}
+
+.name {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.description {
+  font-family: 'Rokkitt', serif;
+  ;
+}
+
+.brand {
+  display: block;
+  padding: 0;
+  margin: 120px 0 0 0;
+}
+
+.brand .daily h1 {
+  color: #e58924;
+  font-size: 50px;
+  float: left;
+  margin: 10px -10px 0 50px;
+  text-align: center;
+}
+
+.brand .logo {
+  height: 180px;
+  margin: 0 45px 0 0;
+  position: relative;
+  text-align: center;
+  width: auto;
+  z-index: 10;
+  float: left;
+}
+
+.brand .deal h1 {
+  background: #e58924;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  height: 140px;
+  margin: 0 -39px 0 0;
+  position: relative;
+  text-align: center;
+  width: 140px;
+  z-index: 10;
+  float: left;
+}
+
+.brand .deal h1 span {
+  color: #fff;
+  display: block;
+  font-size: 40px;
+  padding: 34px 0 0 0;
+}
+
+.brand .deal h1 span+span {
+  color: #000;
+  display: block;
+  font-size: 28px;
+  padding: 0;
+}
+
+.main .content .vid {
+  background: DimGrey;
+  margin: 0;
+  margin-top: 0px;
+  width: 960px;
+  height: 740px;
+  padding: 0px;
+  float: right;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.main .content .slider {
+  background: #fff;
+  width: 960px;
+  height: 540px;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  margin-top: 740px;
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide1 {
+  background: url(../img/LTO1.jpg)no-repeat center;
+  background-size: cover;
+  animation: fade 32s infinite;
+  -webkit-animation: fade 32s infinite;
+}
+
+.slide2 {
+  background: url(../img/LTO2.jpg)no-repeat center;
+  background-size: cover;
+  animation: fade2 32s infinite;
+  -webkit-animation: fade2 32s infinite;
+}
+
+.slide3 {
+  background: url(../img/LTO3.jpg)no-repeat center;
+  background-size: cover;
+  animation: fade3 32s infinite;
+  -webkit-animation: fade3 32s infinite;
+}
+
+.slide4 {
+  background: url(../img/LTO4.jpg)no-repeat center;
+  background-size: cover;
+  animation: fade4 32s infinite;
+  -webkit-animation: fade4 32s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1
+  }
+  25% {
+    opacity: 0
+  }
+  50% {
+    opacity: 0
+  }
+  75% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
+  75% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  75% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes fade4 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 0
+  }
+  50% {
+    opacity: 0
+  }
+  75% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
