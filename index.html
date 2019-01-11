@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fluff Monsters, Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Rokkitt|Cabin+Sketch:700|Luckiest+Guy' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+
+</head>
+
+<body ng-app="FMIApp">
+  <div class="main" ng-controller="MainController" id="slides_control">
+    <div class="container">
+      <div class="menu_serv">
+        <h2 class="floating">Daycare and Training</h2>
+        <div class=" row" ng-repeat="service in service">
+          <div class="item col-md-9">
+            <h3 class="name">{{service.name}}</h3>
+            <p class="description">{{service.description}}</p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{service.price |currency:"$":0}} {{service.rate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu_spa">
+        <h2 class="floating">Fluffy Spa</h2>
+        <div class="spa row" ng-repeat="spa in spa">
+          <div class="item col-md-9">
+            <h3 class="name">{{spa.name}}</h3>
+            <p class="description">{{spa.description}}</p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{spa.price | currency:"$":0}} {{spa.rate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="brand">
+        <img class="logo" ng-src="{{logo.image}}" alt="FMI_Logo">
+        <div class="deal">
+          <h1 class="tossing"><span>Daily</span><span>Discount</span></h1>
+        </div>
+        <div class="daily">
+          <h1>{{today.disc_amt | currency:"$":0}} {{today.disc}}</h1>
+          <h1>{{today.deal}}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="vid">
+        <video src="{{vid.video}}" style="position:relative; height:740px; verical-align:center;" autoplay loop muted></video>
+      </div>
+      <div class="content slider">
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+        <div class="slide3"></div>
+        <div class="slide4"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modules -->
+  <script src="js/app.js"></script>
+
+  <!-- Controllers -->
+  <!--  <script src="js/controllers/MainController.js"></script>-->
+</body>
+
+</html>
